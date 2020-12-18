@@ -7,7 +7,6 @@
 
 #welcome .container{
     position: relative;
-    height: 44vw;
 }
 
 #wkimg{
@@ -20,14 +19,12 @@
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--main-color);
-    padding: auto;
-    width: 60%;
+    padding: 0.2rem;
     margin: 0 20%;
-    border-radius: 1vw;;
-    top: 39vw;
+    border-radius: 1vw;
+    margin-top: -5vw;
     z-index: 2;
-    position: absolute;
-    box-sizing: border-box;
+    position: relative;
 }
 
 #brand-description h2{
@@ -48,5 +45,6 @@
         font-size: var(--normal-font-size);
     }
 }
+
 
 
