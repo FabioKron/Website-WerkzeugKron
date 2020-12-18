@@ -8,6 +8,7 @@
 
     font-size: var(--normal-font-size);
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body {
