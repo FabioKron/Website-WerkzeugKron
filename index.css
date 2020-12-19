@@ -42,5 +42,17 @@
     }
 }
 
+#info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#info .element {
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 0.1rem black;
+    border-radius: 0.1rem;
+    margin: 0.3rem;
+}
 
 
