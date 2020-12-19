@@ -113,3 +113,16 @@ nav .menu div{
 .nav-active {
     transform: translate(0%);
 }
+
+/* footer */
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    color:var(--main-color);
+}
