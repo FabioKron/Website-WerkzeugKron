@@ -2,7 +2,7 @@
 /* welcome section */
 
 #welcome {
-    margin-top: var(--nav-height);
+    margin: var(--nav-height) 0 0 0;
 }
 
 #wkimg{
