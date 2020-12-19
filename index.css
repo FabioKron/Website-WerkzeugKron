@@ -57,3 +57,6 @@
 }
 
 
+#info #anfahrt a{
+    color: var(--secondary-color);
+}
