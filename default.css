@@ -22,6 +22,12 @@ a{
     text-decoration: none;
 }
 
+
+section.content {
+    padding: 5vw;
+    margin: 0 ;
+}
+
 /* navbar */ 
 
 nav {
