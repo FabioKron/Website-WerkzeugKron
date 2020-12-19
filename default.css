@@ -90,8 +90,7 @@ nav .menu div{
         opacity: 90%;
         position: absolute;
         right: 0;
-        height: 92vh;
-        top: 8vh;
+        top: var(--nav-height);
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
