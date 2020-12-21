@@ -147,7 +147,7 @@ footer a {
 
 .flex-element {
     padding: 0.5rem 2rem;
-    box-shadow: 0 0 0.1rem var(--third-color);
+    box-shadow: 0 0 0.2rem var(--third-color);
     border-radius: 0.1rem;
     margin: 0.3rem;
 }
