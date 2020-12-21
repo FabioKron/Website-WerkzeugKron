@@ -84,3 +84,20 @@
 #info #anfahrt a{
     color: var(--secondary-color);
 }
+
+/* service section */
+
+#service {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#service .flex-element {
+    min-width: 11rem;
+    max-width: 20rem;
+}
+
+#service .flex-element ul li {
+    padding: 0.3rem 0;
+}
