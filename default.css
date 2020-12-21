@@ -3,6 +3,7 @@
     --secondary-color: red;
     --third-color: black;
     --nav-height: 3rem;
+    --footer-height: 2rem;
     --title-font-size: 30px;
     --normal-font-size: 20px;
 
@@ -117,10 +118,12 @@ nav .menu div{
 /* footer */
 
 footer {
+    line-height: var(--footer-height);
+    width: 100%;
     background-color: var(--secondary-color);
-    padding: 0.5rem;
     display: flex;
     justify-content: space-around;
+
 }
 
 footer a {
