@@ -96,10 +96,17 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
+@media only screen and (min-width:1000px) {
+    #service .flex-element {
+        min-width: 11rem;
+        max-width: 20rem;
+    }
+}
 
-#service .flex-element {
-    min-width: 11rem;
-    max-width: 20rem;
+@media only screen and (max-width:1000px) {
+    #service .flex-element{
+        width: 11rem;
+    }
 }
 
 #service .flex-element ul li {
