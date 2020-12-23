@@ -87,6 +87,10 @@
 
 /* service section */
 
+#service h1 {
+    text-align: center;
+}
+
 #service .flex-container {
     display: flex;
     justify-content: space-around;
