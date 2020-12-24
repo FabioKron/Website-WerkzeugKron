@@ -120,10 +120,15 @@
 #weiteres ul li{
     padding: 1rem;
     margin: 0;
-    font-size: var(--title-font-size);
 }
 
 #weiteres a{
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+@media only screen and (min-width:500px) {
+    #weiteres a{
+        font-size: var(--title-font-size);
+    }
 }
