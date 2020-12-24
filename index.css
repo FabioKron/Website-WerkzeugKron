@@ -112,3 +112,9 @@
 #service .flex-element ul li {
     padding: 0.3rem 0;
 }
+
+/* weiteres section */
+
+#weiteres ul{
+    list-style-type: none;
+}
