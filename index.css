@@ -112,7 +112,9 @@
 
 /* weiteres section */
 
-
+#weiteres .flex-element{
+    max-width: 20rem;
+}
 
 #weiteres ul li{
     padding: 1rem;
