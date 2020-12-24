@@ -115,6 +115,10 @@
 
 /* weiteres section */
 
+#weiteres h1{
+    text-align: center;
+}
+
 #weiteres ul{
     list-style-type: none;
 }
