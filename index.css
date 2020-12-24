@@ -122,3 +122,8 @@
     margin: 0;
     font-size: var(--title-font-size);
 }
+
+#weiteres a{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
