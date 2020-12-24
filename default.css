@@ -25,6 +25,10 @@ body {
     background-color:var(--main-color);
 }
 
+h1{
+    font-size: 2rem;
+}
+
 #wrapper{
     min-height:100%;
    position:relative;
