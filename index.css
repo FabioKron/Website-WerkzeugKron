@@ -116,3 +116,9 @@
 #weiteres ul{
     list-style-type: none;
 }
+
+#weiteres ul li{
+    padding: 1rem;
+    margin: 0;
+    font-size: var(--title-font-size);
+}
