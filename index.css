@@ -112,6 +112,11 @@
 
 /* weiteres section */
 
+#weiteres .flex-container{
+    display: flex;
+    justify-content: center;
+}
+
 #weiteres .flex-element{
     max-width: 16rem;
 }
