@@ -70,11 +70,6 @@
 
 /* info section */
 
-#info {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 #info .flex-element {
     width: 11rem;
