@@ -84,7 +84,6 @@
 
 @media only screen and (min-width:1000px) {
     #service .flex-element {
-        min-width: 11rem;
         max-width: 20rem;
     }
 }
