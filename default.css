@@ -155,7 +155,7 @@ footer a {
     flex-wrap: wrap;
 }
 
-section.content h1{
+section.content h1, section.content p{
     text-align: center;
 }
 
