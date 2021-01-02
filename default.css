@@ -149,6 +149,10 @@ footer a {
 
 /* section contents */
 
+main{
+    margin-top: var(--nav-height);
+}
+
 .flex-container {
     display: flex;
     justify-content: space-around;
