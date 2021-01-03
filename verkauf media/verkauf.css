@@ -1,3 +1,4 @@
 #sonderangebote .flex-element{
     display:flex;
+    flex-wrap: wrap;
 }
