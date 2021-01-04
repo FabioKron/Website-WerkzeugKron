@@ -1,3 +1,5 @@
+/* Sonderangebote Layout */
+
 #sonderangebote .flex-element{
     display:flex;
     flex-wrap: wrap;
@@ -23,3 +25,5 @@
     }
 
 }
+
+/* Sonderangebote Style */
