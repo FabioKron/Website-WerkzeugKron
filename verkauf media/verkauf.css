@@ -34,3 +34,10 @@
     font-size: var(--normal-font-size);
     color: #333;
 }
+
+#sonderangebote h4.preis{
+    font-size: var(--title-font-size);
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
