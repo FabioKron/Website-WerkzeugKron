@@ -27,3 +27,9 @@
 }
 
 /* Sonderangebote Style */
+
+#sonderangebote h5.uvp{
+    text-decoration: line-through red;
+    text-decoration-thickness: 0.1rem;
+    font-size: var(--normal-font-size);
+}
