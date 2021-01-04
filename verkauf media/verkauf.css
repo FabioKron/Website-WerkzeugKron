@@ -1,4 +1,25 @@
 #sonderangebote .flex-element{
     display:flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sonderangebote .flex-element img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width:950px) {
+    #sonderangebote .flex-element .image-container {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:950px) {
+    #sonderangebote .flex-element img {
+        margin-left: -1rem;
+        max-width: 12rem;
+    }
+
 }
