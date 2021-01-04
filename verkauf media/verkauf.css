@@ -36,6 +36,10 @@
 
 /* Sonderangebote Style */
 
+#sonderangebote h3{
+    text-align: center;
+}
+
 #sonderangebote h5.uvp{
     text-decoration: line-through red;
     text-decoration-thickness: 0.1rem;
