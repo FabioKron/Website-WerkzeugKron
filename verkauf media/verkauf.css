@@ -13,7 +13,11 @@
 
 @media only screen and (max-width:950px) {
     #sonderangebote .flex-element .image-container {
-        max-width: 100%;
+        width: 100%;
+    }
+
+    #sonderangebote .flex-element img {
+        width: 100%;
     }
 
     #sonderangebote .description-container {
