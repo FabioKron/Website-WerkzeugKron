@@ -33,6 +33,10 @@
         flex-wrap: nowrap;
     }
 
+    #sonderangebote .flex-element .image-container {
+        height: 100%;
+    }
+
     #sonderangebote .flex-element img {
         margin-left: -1rem;
         max-width: 12rem;
