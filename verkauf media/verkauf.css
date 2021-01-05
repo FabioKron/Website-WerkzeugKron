@@ -2,7 +2,6 @@
 
 #sonderangebote .flex-element{
     display:flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
@@ -12,6 +11,10 @@
 }
 
 @media only screen and (max-width:950px) {
+    #sonderangebote .flex-element{
+        flex-wrap: wrap;
+    }
+
     #sonderangebote .flex-element .image-container {
         width: 100%;
     }
@@ -26,6 +29,10 @@
 }
 
 @media only screen and (min-width:950px) {
+    #sonderangebote .flex-element{
+        flex-wrap: nowrap;
+    }
+
     #sonderangebote .flex-element img {
         margin-left: -1rem;
         max-width: 12rem;
