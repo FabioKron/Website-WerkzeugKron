@@ -16,6 +16,9 @@
         max-width: 100%;
     }
 
+    #sonderangebote .description-container {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:950px) {
