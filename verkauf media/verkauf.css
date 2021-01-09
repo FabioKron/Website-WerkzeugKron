@@ -54,6 +54,10 @@
 
 /* Sonderangebote Style */
 
+#sonderangebote .flex-element {
+    width: 100%;
+}
+
 #sonderangebote h3{
     text-align: center;
 }
