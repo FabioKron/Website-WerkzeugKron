@@ -33,6 +33,10 @@
         flex-wrap: nowrap;
     }
 
+    #sonderangebote .description-container {
+        margin: auto;
+    }
+
     #sonderangebote .flex-element .image-container {
         height: 100%;
     }
