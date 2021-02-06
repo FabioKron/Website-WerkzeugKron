@@ -10,3 +10,7 @@
 #mietgeraete .flex-element ul li{
     list-style: none;
 }
+
+#mietgeraete .flex-element ul li a{
+    color:red;
+}
