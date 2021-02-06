@@ -6,3 +6,7 @@
 #mietgeraete h3 {
     text-align: center;
 }
+
+#mietgeraete .flex-element ul li{
+    list-style: none;
+}
