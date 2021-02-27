@@ -2,8 +2,15 @@
     padding-top: 0.2rem;
 }
 
-#mietgeraete .flex-element {
-    width: 300px;
+@media (min-width: 768px) {
+    .column-box {
+        column-count: 4;
+
+    }
+}
+
+#mietgeraete .flex-element{
+    page-break-inside: avoid;
 }
 
 #mietgeraete h3 {
