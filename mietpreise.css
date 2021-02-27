@@ -2,6 +2,9 @@
     padding-top: 0.2rem;
 }
 
+#mietgeraete .flex-element {
+    width: 300px;
+}
 
 #mietgeraete h3 {
     text-align: center;
