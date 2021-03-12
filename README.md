@@ -1,4 +1,4 @@
-# WebsiteWerkzeugKron
+# Website-WerkzeugKron
 Website of WerkzeugKron (German company) 
 
 ### Da das Webdesign der alten Website veraltet ist, wird die Internetseite nun neu aufgesetzt.
