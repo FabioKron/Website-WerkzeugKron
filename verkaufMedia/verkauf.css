@@ -70,7 +70,7 @@ img {
 #sonderangebote .offers h5.uvp {
     text-decoration: line-through red;
     text-decoration-thickness: 0.1rem;
-    font-size: var(--normal-font-size);
+    font-size: var(--title-font-size);
     color: #333;
     margin: 0.1rem 1rem;
 }
