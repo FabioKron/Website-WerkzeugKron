@@ -51,7 +51,7 @@ img {
 
 /* Style offers */
 
-#sonderangebote .preise {
+#sonderangebote .prices {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -75,7 +75,7 @@ img {
     margin: 0.1rem 1rem;
 }
 
-#sonderangebote .offers h4.preis {
+#sonderangebote .offers h4.price {
     font-size: var(--title-font-size);
     color: red;
     font-weight: bold;
