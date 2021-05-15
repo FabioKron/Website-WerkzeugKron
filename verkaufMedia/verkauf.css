@@ -1,52 +1,55 @@
 /* Sonderangebote Layout */
 
-#sonderangebote .flex-element{
-    display:flex;
-    flex-direction: row;
+#sonderangebote .flex-element {
+    width: 100%;
+}
+
+#sonderangebote .description-image-container {
+    display: flex;
     align-items: center;
 }
 
-#sonderangebote .flex-element img {
-    max-width: 100%;
-}
-
 @media only screen and (max-width:950px) {
-    #sonderangebote .flex-element{
-        flex-wrap: wrap;
+    #sonderangebote .image-container {
+        max-width: 500px;
     }
-
-    #sonderangebote .flex-element .image-container {
-        width: 100%;
-    }
-
-    #sonderangebote .flex-element img {
-        width: 100%;
-    }
-
-    #sonderangebote .description-container {
-        width: 100%;
+    #sonderangebote .description-image-container {
+        flex-direction: column;
     }
 }
 
 @media only screen and (min-width:950px) {
-    #sonderangebote .flex-element{
-        flex-wrap: nowrap;
+    #sonderangebote .description-image-container {
+        flex-direction: row;
     }
-
-    #sonderangebote .description-container {
-        margin: auto;
+    #sonderangebote .image-container {
+        padding: 1rem;
     }
-
-    #sonderangebote .flex-element .image-container {
-        height: 100%;
-    }
-
-    #sonderangebote .flex-element img {
-        margin-left: -1rem;
-        max-width: 12rem;
-    }
-
 }
+
+@media only screen and (min-width:950px) and (max-width:1300px) {
+    #sonderangebote .image-container {
+        width: 30%;
+    }
+    #sonderangebote .main-description {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width:1300px){
+    #sonderangebote .image-container {
+        width: 20%;
+    }
+    #sonderangebote .main-description {
+        width: 80%;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Style offers */
 
 #sonderangebote .preise {
     display: flex;
@@ -56,17 +59,15 @@
     flex-wrap: wrap
 }
 
-/* Sonderangebote Style */
-
-#sonderangebote .flex-element {
+#sonderangebote .offers {
     width: 100%;
 }
 
-#sonderangebote h3{
+#sonderangebote .main-description h3 {
     text-align: center;
 }
 
-#sonderangebote h5.uvp{
+#sonderangebote .offers h5.uvp {
     text-decoration: line-through red;
     text-decoration-thickness: 0.1rem;
     font-size: var(--normal-font-size);
@@ -74,14 +75,14 @@
     margin: 0.1rem 1rem;
 }
 
-#sonderangebote h4.preis{
+#sonderangebote .offers h4.preis {
     font-size: var(--title-font-size);
     color: red;
     font-weight: bold;
     margin: 0.1rem 1rem;
 }
 
-#sonderangebote .offer{
+#sonderangebote .offer {
     border-top: 1px solid var(--third-color);
     padding: 0.5rem;
 }
