@@ -1,3 +1,29 @@
+/* Verkauf Style */
+#verkauf li {
+    list-style: none;
+    margin: 0.5rem;
+    color: var(--secondary-color);
+}
+
+
+@media only screen and (min-width:950px) {
+    #verkauf .flex-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #verkauf ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #verkauf .flex-element {
+        max-width: 40%;
+    }
+    #verkauf li {
+        list-style: none;
+        margin: 0.5rem;
+    }
+}
+
 /* Sonderangebote Layout */
 
 #sonderangebote .flex-element {
@@ -38,7 +64,7 @@
     }
 }
 
-@media only screen and (min-width:1300px){
+@media only screen and (min-width:1300px) {
     #sonderangebote .image-container {
         width: 20%;
     }
