@@ -96,7 +96,7 @@ img {
 }
 
 #sonderangebote .offers h5.uvp {
-    text-decoration: line-through red;
+    text-decoration: line-through var(--secondary-color);
     text-decoration-thickness: 0.1rem;
     font-size: var(--title-font-size);
     color: #333;
@@ -105,7 +105,7 @@ img {
 
 #sonderangebote .offers h4.price {
     font-size: var(--title-font-size);
-    color: red;
+    color: var(--secondary-color);
     font-weight: bold;
     margin: 0.1rem 1rem;
 }
