@@ -1,7 +1,7 @@
 /*
 Copyright (C) 2008 Harald Herberth
 Licence BSD
-Darf frei verwendet werden, solange damit keine Werbung in die erzeugten Tabellen eingefügt wird
+Darf frei verwendet werden, solange damit keine Werbung in die erzeugten Tabellen eingefï¿½gt wird
 
 Dokumentation siehe im help.html file
 
@@ -10,9 +10,9 @@ wird er so gelassen, dann werden die Daten von selben server geladen von dem die
 
 Beispiele
 <!-- Einbinden der CSS und JS Dateien -->
-<link rel="stylesheet" type="text/css" href="/tabellen.css">
-<script src="/jquery.js" type="text/javascript"></script>
-<script src="/tabellen.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/LiveErgebnisse/nutab/tabellen.css">
+<script src="/LiveErgebnisse/nutab/jquery.js" type="text/javascript"></script>
+<script src="/LiveErgebnisse/nutab/tabellen.js" type="text/javascript"></script>
 
 <!-- Erzeugt einen Eintrag mit Links auf alle Tabellen, die in die Seite eingebaut wurden -->
 <div class="srsLinks"></div>
@@ -20,10 +20,10 @@ Beispiele
 <!-- Tabelle mit voller Anzeige -->
 <div class="srsTab" srsurl="..." srsVerein="Zirndorf"></div>
 
-<!-- Spielplan für eineKlasse -->
+<!-- Spielplan fï¿½r eineKlasse -->
 <div class="srsPlan" srsurl="..." srsVerein="Zirndorf" srsAlle=1></div>
 
-<!-- Gesamt-Spielplan für einen Verein -->
+<!-- Gesamt-Spielplan fï¿½r einen Verein -->
 <div class="srsPlanVerein" srsclub="..." srsAlle=1></div>
 
 */
@@ -31,8 +31,8 @@ jQuery(document).ready(function($){
 	if (window.srsLoaded) return;
 	window.srsLoaded = true;
 	$.ajaxSettings.cache = false;
-	// basis ist die URL von der später dann fetch_table.php aufzurufen ist. 
-	// kann auch leer oder unverändert gelassen werden, dann wir der Server genommen von dem aus die Seite geladen wurde
+	// basis ist die URL von der spï¿½ter dann fetch_table.php aufzurufen ist. 
+	// kann auch leer oder unverï¿½ndert gelassen werden, dann wir der Server genommen von dem aus die Seite geladen wurde
 	// http oder https wird automatisch aus location.protocol bestimmt
 	// SERVER kann ersetzt werden durch den echten Server auf dem fetch_table.php installiert oder genutzt werden soll
 	// immer mit // beginnen und mit / beenden!! Auf das Verzeichnis im Server wo fetch_table installiert ist
@@ -80,7 +80,7 @@ jQuery(document).ready(function($){
 					if (fe[i].match(/^%/))
 						fev = fe[i].substr(1);
 					else {
-						ff = fe[i].split(/\/|!|\xa7/); // xa7 = §
+						ff = fe[i].split(/\/|!|\xa7/); // xa7 = ï¿½
 						fev = (val[ff[0]] ? val[ff[0]] : '');
 						if (fev.length > 0) allnull = false;
 						// is there a pattern match and replace in the field expression (field/pat/replace)
@@ -89,7 +89,7 @@ jQuery(document).ready(function($){
 							pat = new RegExp(ff[1]);
 							fev = fev.replace(pat,ff[2]); 
 						}
-						// is there a substring expression (field§start§len or sep by !)
+						// is there a substring expression (fieldï¿½startï¿½len or sep by !)
 						ff = fe[i].split(/\xa7/);
 						if (ff.length == 3) {
 							fev = fev.substr(ff[1],ff[2]); 
@@ -119,14 +119,14 @@ jQuery(document).ready(function($){
 		if (!p.class) p.class = "srsTable";
 		var h = create_table(p.header, p.fields, data);
 		$(div).html(h);
-		// class für tabelle und felder setzen
+		// class fï¿½r tabelle und felder setzen
 		$(div).find("table.srs").addClass(p.class);
 		var t = $(div).find("tr.srs");
 		$.each(p.classCol.split(/;/), function (i, val) {
 			t.find("td.srs:eq("+i+")").addClass(val).end()
 			 .find("th.srs:eq("+i+")").addClass(val).end();
 		});
-		// eigenen Verein einfärben
+		// eigenen Verein einfï¿½rben
 		if (p.verein) t.filter(":contains('"+p.verein+"')").addClass("srsHome");
 	};
 	// alle tabellen (spiele und tabelle) fuer eine klasse
@@ -172,7 +172,7 @@ jQuery(document).ready(function($){
 			}
 			show_table(d[0], data.Aktueller_Spielplan.Tabelle, p);
 			// delete unwanted rows
-			// welche Spalte hat denn den Platz, nicht das wir zuviel löschen
+			// welche Spalte hat denn den Platz, nicht das wir zuviel lï¿½schen
 			var sp = $.inArray("Platz", p.fields.split(/;/));
 			if (+p.keineak > 0) {
 				$(d).find("tr.srs").find("td.srs:eq("+sp+"):contains('254')").parents("tr.srs").remove();
@@ -245,7 +245,7 @@ jQuery(document).ready(function($){
 	};
 	// Tabellen suchen und darstellen
 	lookup_tables();
-	// haben wir Spielpläne für eine bestimmte Klasse und Verein
+	// haben wir Spielplï¿½ne fï¿½r eine bestimmte Klasse und Verein
 	// diese ausgeben als datum, zeit, halle, heim, gast
 	$("div.srsPlan").each(function() {
 		var o = $(this);
@@ -369,16 +369,16 @@ jQuery(document).ready(function($){
 				t.find("td.srs:eq("+i+")").addClass(val).end()
 				 .find("th.srs:eq("+i+")").addClass(val).end();
 			});
-			// eigenen Verein einfärben
+			// eigenen Verein einfï¿½rben
 			if (p.verein) {
 				t = d.find("tr.srs:gt(0)");
 				t.filter(":contains('"+p.verein+"')").addClass("srsHome");
-				// rest löschen
+				// rest lï¿½schen
 				if (!+p.alle || +p.heimgast) {
 					d.find("tr.srs:gt(0):not(.srsHome)").remove();
 					d.find("tr.srsHome").removeClass("srsHome");
 				}
-				// heim und ausw (Spalte über format bestimmen)
+				// heim und ausw (Spalte ï¿½ber format bestimmen)
 				var sh = $.inArray("HeimTeam_Name_kurz", p.fields.split(/;/));
 				var sa = $.inArray("GastTeam_Name_kurz", p.fields.split(/;/));
 				t = d.find("tr.srs:gt(0)");
@@ -393,7 +393,7 @@ jQuery(document).ready(function($){
 					d.find("tr.srs:gt(0):not(.srsAusw)").remove();
 				}
 			}
-			// überzählige löschen 
+			// ï¿½berzï¿½hlige lï¿½schen 
 			if (+p.maxzeilen > 0) d.find("tr.srs:gt(" + (+p.maxzeilen) + ")").remove();
 			// gestrichene Spiele markieren, Die Zeit ist bei solchen Spielen "00:0."
 			d.find("tr.srs td.srs:contains('00:0')").parents("tr.srs").addClass("srsSpielGestrichen");
@@ -403,7 +403,7 @@ jQuery(document).ready(function($){
 		}
 
 	}
-	// Gesamtspielplan für einen Verein
+	// Gesamtspielplan fï¿½r einen Verein
 	$("div.srsPlanVerein").each(function() {
 		var o = $(this);
 		var p = {};
