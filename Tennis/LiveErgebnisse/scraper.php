@@ -64,7 +64,7 @@ if (!empty($html)) {
 
 
 foreach ($results as $res) {
-    print_r($results);
+    print_r($res);
     print_r("<br>");
 }
 ?>
