@@ -62,9 +62,96 @@ if (!empty($html)) {
     }
 }
 
+print_r("<table>");
+print_r("<th>");
+
+print_r("<td>");
+print_r("Datum");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Gruppe");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Heimmannschaft");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Gastmannschaft");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Spielort");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Matches");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Sätze");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Spiele");
+print_r("</td>");
+
+print_r("<td>");
+print_r("Spielbericht");
+print_r("</td>");
+
+print_r("</th>");
 
 foreach ($results as $res) {
-    print_r($res);
-    print_r("<br>");
+    print_r("<tr>");
+
+
+
+
+    print_r("<table>");
+    print_r("<th>");
+
+    print_r("<td>");
+    print_r($res["date"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["group"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["home"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["guest"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["place"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["matches"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["sets"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["games"]);
+    print_r("</td>");
+
+    print_r("<td>");
+    print_r($res["result"]);
+    print_r("</td>");
+
+
+
+    print_r("</tr>");
 }
+print_r("</table>");
+
 ?>
