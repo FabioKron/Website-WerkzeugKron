@@ -18,18 +18,8 @@ if (!empty($html)) {
             $results[$i]['date'] = $date->plaintext;
         }
 
-        /*
-        //Extract the number of star ratings
-        foreach ($div_class->find(".ipl-ratings-bar") as $ratings) {
-            $results[$i]['ratings'] = $ratings->plaintext;
-        }
+        $results[$i]["div_class"] = $div_class;
 
-        //Extract the review content
-        foreach ($div_class->find('div[class=text show-more__control]') as $description) {
-            $content = html_entity_decode($description->plaintext);
-            $content = preg_replace('/\&#39;/', "", $content);
-            $results[$i]['description'] = html_entity_decode($content);
-        }   */
         $i++;
     }
 }
