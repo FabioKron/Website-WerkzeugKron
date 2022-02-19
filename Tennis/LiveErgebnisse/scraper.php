@@ -62,7 +62,7 @@ if (!empty($html)) {
     }
 }
 
-print_r("<table>");
+print_r("<table style='border:2px solid black;'>");
 print_r("<th>");
 
 print_r("<td>");
@@ -105,12 +105,6 @@ print_r("</th>");
 
 foreach ($results as $res) {
     print_r("<tr>");
-
-
-
-
-    print_r("<table>");
-    print_r("<th>");
 
     print_r("<td>");
     print_r($res["date"]);
