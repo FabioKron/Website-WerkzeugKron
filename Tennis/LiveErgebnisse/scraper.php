@@ -63,7 +63,7 @@ if (!empty($html)) {
 }
 
 print_r("<table style='border:2px solid black;'>");
-print_r("<th>");
+print_r("<tr>");
 
 print_r("<td>");
 print_r("Datum");
@@ -101,7 +101,7 @@ print_r("<td>");
 print_r("Spielbericht");
 print_r("</td>");
 
-print_r("</th>");
+print_r("</tr>");
 
 foreach ($results as $res) {
     print_r("<tr>");
