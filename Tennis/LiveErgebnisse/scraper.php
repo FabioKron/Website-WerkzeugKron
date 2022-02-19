@@ -13,15 +13,58 @@ if (!empty($html)) {
 
     foreach ($html->find("tr") as $div_class) {
 
-        //Extract the review title
+        # Datum
         foreach ($div_class->find(".date") as $date) {
             $results[$i]['date'] = $date->plaintext;
         }
 
-        $results[$i]["div_class"] = $div_class;
+        # Gruppe
+        foreach ($div_class->find(".group") as $group) {
+            $results[$i]['group'] = $group->plaintext;
+        }
 
+        # Heimmannschaft
+        foreach ($div_class->find(".home") as $home) {
+            $results[$i]['home'] = $home->plaintext;
+        }
+
+        # Gastmannschaft
+        foreach ($div_class->find(".guest") as $guest) {
+            $results[$i]['guest'] = $guest->plaintext;
+        }
+
+        # Spielort
+        foreach ($div_class->find(".place") as $place) {
+            $results[$i]['place'] = $place->plaintext;
+        }
+
+        # Matches
+        foreach ($div_class->find(".matches") as $matches) {
+            $results[$i]['matches'] = $matches->plaintext;
+        }
+
+        # Sätze
+        foreach ($div_class->find(".sets") as $sets) {
+            $results[$i]['sets'] = $sets->plaintext;
+        }
+
+        # Spiele
+        foreach ($div_class->find(".games") as $games) {
+            $results[$i]['games'] = $games->plaintext;
+        }
+
+        # Spielbericht
+        foreach ($div_class->find(".result") as $result) {
+            $results[$i]['result'] = $result->plaintext;
+        }
+        
         $i++;
     }
 }
-print_r($results);
+
+
+foreach ($results as $res) {
+    print_r($results);
+    print_r("<br>");
+}
 ?>
