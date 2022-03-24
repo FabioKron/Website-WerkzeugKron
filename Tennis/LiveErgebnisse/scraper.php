@@ -1,8 +1,18 @@
 <?php
   require_once "simple_html_dom.php";
 
+  $request = array(
+    'http' => array(
+        'method' => 'POST',
+        'content' => http_build_query(array(
+            'fromDate' => '01.01.2022'
+        )),
+    )
+    );
+    
+$context = stream_context_create($request);
 
-$html = file_get_html("https://www.rlp-tennis.de/liga/vereine/verein/begegnungen/v/21710.html?cHash=34811ff732377e3e5f0bd7f96c2a2ca5", false);
+$html = file_get_html("https://www.rlp-tennis.de/liga/vereine/verein/begegnungen/v/21710.html?cHash=34811ff732377e3e5f0bd7f96c2a2ca5", false, $context);
 
 $results = array();
 
