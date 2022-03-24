@@ -160,4 +160,5 @@ print_r("</table>");
 
 print_r("<br>");
 print_r(gettype($html));
+var_dump($html);
 ?>
