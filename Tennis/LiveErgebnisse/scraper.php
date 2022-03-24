@@ -159,5 +159,5 @@ foreach ($results as $res) {
 print_r("</table>");
 
 print_r("<br>")
-print_r($html)
+echo $html
 ?>
