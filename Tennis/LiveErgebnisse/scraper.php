@@ -5,7 +5,7 @@
     'http' => array(
         'method' => 'POST',
         'content' => http_build_query(array(
-            'fromDate' => '01.01.2022'
+            'tx_nuportalrs_nuportalrs[meetingsFilter][fromDate]' => '01.01.2022'
         )),
     )
     );
@@ -158,9 +158,4 @@ foreach ($results as $res) {
 }
 print_r("</table>");
 
-print_r("<br>");
-load_file(
-    "https://www.rlp-tennis.de/liga/vereine/verein/begegnungen/v/21710.html?cHash=34811ff732377e3e5f0bd7f96c2a2ca5",
-    false,
-    $context);
 ?>
