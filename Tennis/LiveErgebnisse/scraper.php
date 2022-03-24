@@ -159,5 +159,5 @@ foreach ($results as $res) {
 print_r("</table>");
 
 print_r("<br>")
-echo $html
+echo gettype($html)
 ?>
