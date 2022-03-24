@@ -158,6 +158,6 @@ foreach ($results as $res) {
 }
 print_r("</table>");
 
-print_r("<br>")
-echo gettype($html)
+print_r("<br>");
+print_r(gettype($html));
 ?>
