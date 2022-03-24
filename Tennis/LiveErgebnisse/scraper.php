@@ -5,7 +5,8 @@
     'http' => array(
         'method' => 'POST',
         'content' => http_build_query(array(
-            'tx_nuportalrs_nuportalrs[meetingsFilter][fromDate]' => '01.01.2022'
+            'tx_nuportalrs_nuportalrs[meetingsFilter][fromDate]' => '01.01.2022',
+            'tx_nuportalrs_nuportalrs[meetingsFilter][toDate]'  => '20.09.2022'
         )),
     )
     );
@@ -157,5 +158,5 @@ foreach ($results as $res) {
     print_r("</tr>");
 }
 print_r("</table>");
-
+var_dump($html);
 ?>
