@@ -159,6 +159,5 @@ foreach ($results as $res) {
 print_r("</table>");
 
 print_r("<br>");
-print_r(gettype($html));
-var_dump($html);
+print_r(save($html));
 ?>
