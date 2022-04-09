@@ -13,7 +13,7 @@
     
     $context = stream_context_create($request);
 
-print_r($context)
+print_r($context);
 
 $html = file_get_html("https://www.rlp-tennis.de/liga/vereine/verein/begegnungen/v/21710.html?cHash=34811ff732377e3e5f0bd7f96c2a2ca5", false, $context);
 
