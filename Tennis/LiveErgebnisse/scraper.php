@@ -147,4 +147,7 @@ foreach ($results as $res) {
     print_r("</tr>");
 }
 print_r("</table>");
+
+print_r("<br>")
+print_r($html->find(".startdate")->plaintext);
 ?>
