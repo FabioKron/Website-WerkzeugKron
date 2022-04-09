@@ -148,6 +148,8 @@ foreach ($results as $res) {
 }
 print_r("</table>");
 
-print_r("<br>")
-print_r($html->find(".startdate")->plaintext);
+print_r("<br>abc<br>");
+foreach ($html->find(".startdate") as $start) {
+    print_r($start->plaintext);
+}
 ?>
