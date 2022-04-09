@@ -150,6 +150,6 @@ print_r("</table>");
 
 print_r("<br>abc<br>");
 foreach ($html->find(".startdate") as $start) {
-    print_r($start->plaintext);
+    print_r($start->value);
 }
 ?>
