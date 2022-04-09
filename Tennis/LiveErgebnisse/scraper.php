@@ -2,7 +2,7 @@
   require_once "simple_html_dom.php";
     
 
-$html = file_get_html("https://www.rlp-tennis.de/liga/vereine/verein/begegnungen/v/21710.html?cHash=34811ff732377e3e5f0bd7f96c2a2ca5");
+$html = file_get_html("https://www.rlp-tennis.de/liga/vereine/verein/begegnungen/app/nuChampionships.html?cHash=0d7060a683d0731dd570aa26f9c28ef4");
 
 $results = array();
 
