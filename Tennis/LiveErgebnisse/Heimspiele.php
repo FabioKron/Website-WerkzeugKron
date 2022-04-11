@@ -53,15 +53,15 @@
     print_r("<table style='font-family: Arial, Helvetica, sans-serif;'>");
     print_r("<tr>");
 
-    print_r("<td style='font-size: 16pt; font-weight=bolder;padding=4px;'>");
+    print_r("<td style='font-size: 16pt; font-weight=bolder;padding=15px;'>");
     print_r("Datum");
     print_r("</td>");
 
-    print_r("<td style='font-size: 16pt; font-weight=bolder;padding=4px;'>");
+    print_r("<td style='font-size: 16pt; font-weight=bolder;padding=15px;'>");
     print_r("Mannschaft");
     print_r("</td>");
 
-    print_r("<td style='font-size: 16pt; font-weight=bolder;padding=4px;'>");
+    print_r("<td style='font-size: 16pt; font-weight=bolder;padding=15px;'>");
     print_r("Gastmannschaft");
     print_r("</td>");
 
@@ -70,15 +70,15 @@
     foreach ($results as $res) {
         print_r("<tr>");
 
-        print_r("<td style='font-size: 12pt;padding=4px;'>");
+        print_r("<td style='font-size: 12pt;padding=15px;'>");
         print_r($res["date"]);
         print_r("</td>");
 
-        print_r("<td style='font-size: 12pt;padding=4px;'>");
+        print_r("<td style='font-size: 12pt;padding=15px;'>");
         print_r($res["group"]);
         print_r("</td>");
 
-        print_r("<td style='font-size: 12pt;padding=4px;'>");
+        print_r("<td style='font-size: 12pt;padding=15px;'>");
         print_r($res["guest"]);
         print_r("</td>");
 
