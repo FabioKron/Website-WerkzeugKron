@@ -50,7 +50,7 @@
         }
     }
 
-    print_r("<table style='font-family: Arial, Helvetica, sans-serif;'>");
+    print_r("<center><table style='font-family: Arial, Helvetica, sans-serif;'>");
     print_r("<tr>");
 
     print_r("<td style='font-size: 16pt; font-weight:bolder;padding:10px;'>");
@@ -84,7 +84,7 @@
 
         print_r("</tr>");
     }
-    print_r("</table>");
+    print_r("</table></center>");
 
     ?>
 
