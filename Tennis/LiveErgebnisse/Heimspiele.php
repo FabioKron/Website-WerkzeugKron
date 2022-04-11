@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TCBW Herxheim | Heimspiele</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="heimspiele.css" />
 
 </head>
@@ -44,6 +45,9 @@
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
             
             $i++;
+            if (i == 10){
+                break;
+            }
         }
     }
 
@@ -55,7 +59,7 @@
     print_r("</td>");
 
     print_r("<td>");
-    print_r("Gruppe");
+    print_r("Mannschaft");
     print_r("</td>");
 
     print_r("<td>");
