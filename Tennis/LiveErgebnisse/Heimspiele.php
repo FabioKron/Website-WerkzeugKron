@@ -45,7 +45,7 @@
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
             
             $i++;
-            if (i == 10){
+            if ($i == 10){
                 break;
             }
         }
