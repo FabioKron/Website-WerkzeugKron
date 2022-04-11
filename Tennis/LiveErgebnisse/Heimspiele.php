@@ -70,15 +70,15 @@
     foreach ($results as $res) {
         print_r("<tr>");
 
-        print_r("<td style='font-size: 12pt;padding:10px;'>");
+        print_r("<td style='font-size: 12pt;padding: 2px 10px;'>");
         print_r($res["date"]);
         print_r("</td>");
 
-        print_r("<td style='font-size: 12pt;padding:10px;'>");
+        print_r("<td style='font-size: 12pt;padding: 2px 10px;'>");
         print_r($res["group"]);
         print_r("</td>");
 
-        print_r("<td style='font-size: 12pt;padding:10px;'>");
+        print_r("<td style='font-size: 12pt;padding: 2px 10px;'>");
         print_r($res["guest"]);
         print_r("</td>");
 
