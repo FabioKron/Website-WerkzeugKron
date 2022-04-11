@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TCBW Herxheim | Heimspiele</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="heimspiele.css" />
+    <link rel="stylesheet" type="text/css" href="./heimspiele.css" />
 
 </head>
 
@@ -54,15 +53,15 @@
     print_r("<table>");
     print_r("<tr>");
 
-    print_r("<td>");
+    print_r("<td class='head'>");
     print_r("Datum");
     print_r("</td>");
 
-    print_r("<td>");
+    print_r("<td class='head'>");
     print_r("Mannschaft");
     print_r("</td>");
 
-    print_r("<td>");
+    print_r("<td class='head'>");
     print_r("Gastmannschaft");
     print_r("</td>");
 
@@ -71,15 +70,15 @@
     foreach ($results as $res) {
         print_r("<tr>");
 
-        print_r("<td>");
+        print_r("<td class='content'>");
         print_r($res["date"]);
         print_r("</td>");
 
-        print_r("<td>");
+        print_r("<td class='content'>");
         print_r($res["group"]);
         print_r("</td>");
 
-        print_r("<td>");
+        print_r("<td class='content'>");
         print_r($res["guest"]);
         print_r("</td>");
 
