@@ -22,19 +22,13 @@ if (!empty($html)) {
         }
 
         # Datum
-        foreach ($div_class->find(".date") as $date) {
-            $results[$i]['date'] = $date->plaintext;
-        }
+        $results[$i]['date'] = $div_class->find(".date")[0]->plaintext;
 
         # Gruppe
-        foreach ($div_class->find(".group") as $group) {
-            $results[$i]['group'] = $group->plaintext;
-        }
+        $results[$i]['group'] = $div_class->find(".group")[0]->plaintext;
 
         # Gastmannschaft
-        foreach ($div_class->find(".guest") as $guest) {
-            $results[$i]['guest'] = $guest->plaintext;
-        }
+        $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
         
         $i++;
     }
@@ -76,5 +70,4 @@ foreach ($results as $res) {
 }
 print_r("</table>");
 
-print_r("<br>abc<br>");
 ?>
