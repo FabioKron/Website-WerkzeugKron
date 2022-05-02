@@ -38,7 +38,7 @@
             $results[$i]['date'] = $div_class->find(".date")[0]->plaintext;
 
             # Gruppe
-            $results[$i]['group'] = $div_class->find(".group")[0]->plaintext;
+            $results[$i]['group'] = explode(" Gr.", $div_class->find(".group")[0]->plaintext)[0];
 
             # Gastmannschaft
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
