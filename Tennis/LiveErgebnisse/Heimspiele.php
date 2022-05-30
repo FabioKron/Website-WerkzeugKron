@@ -76,7 +76,7 @@
         print_r($a2);
         $v1 = strtotime($a1);
         $v2 = strtotime($a2);
-        return $v2 - $v1; // $v2 - $v1 to reverse direction
+        return $v1 - $v2; // $v2 - $v1 to reverse direction
      });
 
     print_r("<table style='font-family: Arial, Helvetica, sans-serif;'>");
