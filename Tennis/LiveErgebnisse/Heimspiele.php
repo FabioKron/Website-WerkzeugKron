@@ -22,6 +22,7 @@
 
         $div_class = "";
 
+        $i = 0;
         foreach ($html->find("tr") as $div_class) {
             
             $herxheim_ist_heim = false;
@@ -41,6 +42,12 @@
 
             # Gastmannschaft
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
+
+            $i++;
+            print_r($i);
+            if ($i == 15){
+                break;
+        }
             
         }
     }
@@ -48,7 +55,7 @@
     usort($results, function($a1, $a2) {
         $v1 = strtotime($a1['date']);
         $v2 = strtotime($a2['date']);
-        return $v1 - $v2; // $v2 - $v1 to reverse direction
+        return $v2 - $v1; // $v2 - $v1 to reverse direction
      });
 
     print_r("<table style='font-family: Arial, Helvetica, sans-serif;'>");
