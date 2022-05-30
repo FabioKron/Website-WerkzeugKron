@@ -52,9 +52,27 @@
         }
     }
 
+    function replaceMonth($e){
+        $e = str_replace(".1.", " January ", $e);
+        $e = str_replace(".2.", " February ", $e); 
+        $e = str_replace(".3.", " March ", $e); 
+        $e = str_replace(".4.", " April ", $e); 
+        $e = str_replace(".5.", " May ", $e); 
+        $e = str_replace(".6.", " June ", $e); 
+        $e = str_replace(".7.", " July ", $e); 
+        $e = str_replace(".8.", " August ", $e); 
+        $e = str_replace(".9.", " September ", $e); 
+        $e = str_replace(".10.", " October ", $e); 
+        $e = str_replace(".11.", " November ", $e); 
+        $e = str_replace(".12.", " December ", $e);  
+        return $e;
+    }
+
     usort($results, function($e1, $e2) {
         $a1 = explode(" ", $e1["date"])[1];
+        $a1 = replaceMonth($a1);
         $a2 = explode(" ", $e2["date"])[1];
+        $a2 = replaceMonth($a2);
         $v1 = strtotime($a1);
         $v2 = strtotime($a2);
         return $v2 - $v1; // $v2 - $v1 to reverse direction
