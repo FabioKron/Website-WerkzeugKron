@@ -21,7 +21,6 @@
     if (!empty($html)) {
 
         $div_class = "";
-        $i = 0;
 
         foreach ($html->find("tr") as $div_class) {
             
@@ -43,12 +42,14 @@
             # Gastmannschaft
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
             
-            $i++;
-            if ($i == 10){
-                break;
-            }
         }
     }
+
+    usort($results, function($a1, $a2) {
+        $v1 = strtotime($a1['date']);
+        $v2 = strtotime($a2['date']);
+        return $v1 - $v2; // $v2 - $v1 to reverse direction
+     });
 
     print_r("<table style='font-family: Arial, Helvetica, sans-serif;'>");
     print_r("<tr>");
@@ -67,6 +68,7 @@
 
     print_r("</tr>");
 
+    $i = 0;
     foreach ($results as $res) {
         print_r("<tr>");
 
@@ -83,6 +85,11 @@
         print_r("</td>");
 
         print_r("</tr>");
+
+        $i++;
+        if ($i == 10){
+            break;
+        }
     }
     print_r("</table>");
 
