@@ -87,6 +87,7 @@
         print_r("</tr>");
 
         $i++;
+        print_r($i);
         if ($i == 10){
             break;
         }
