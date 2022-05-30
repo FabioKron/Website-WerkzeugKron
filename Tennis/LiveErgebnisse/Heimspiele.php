@@ -44,7 +44,6 @@
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
 
             $i++;
-            print_r($i);
             if ($i == 15){
                 break;
         }
@@ -69,9 +68,9 @@
     }
 
     usort($results, function($e1, $e2) {
-        $a1 = explode(" ", $e1["date"])[1];
+        $a1 = explode(" ", $e1["date"])[2];
         $a1 = replaceMonth($a1);
-        $a2 = explode(" ", $e2["date"])[1];
+        $a2 = explode(" ", $e2["date"])[2];
         $a2 = replaceMonth($a2);
         print_r($a1);
         print_r($a2);
