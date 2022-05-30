@@ -52,9 +52,11 @@
         }
     }
 
-    usort($results, function($a1, $a2) {
-        $v1 = strtotime($a1['date']);
-        $v2 = strtotime($a2['date']);
+    usort($results, function($e1, $e2) {
+        $a1 = explode(" ", $e1["date"])[1];
+        $a2 = explode(" ", $e2["date"])[1];
+        $v1 = strtotime($a1);
+        $v2 = strtotime($a2);
         return $v2 - $v1; // $v2 - $v1 to reverse direction
      });
 
