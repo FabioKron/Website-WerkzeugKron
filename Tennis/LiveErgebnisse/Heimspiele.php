@@ -73,6 +73,8 @@
         $a1 = replaceMonth($a1);
         $a2 = explode(" ", $e2["date"])[1];
         $a2 = replaceMonth($a2);
+        print_r($a1);
+        print_r($a2);
         $v1 = strtotime($a1);
         $v2 = strtotime($a2);
         return $v2 - $v1; // $v2 - $v1 to reverse direction
