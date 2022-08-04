@@ -53,8 +53,8 @@
     }
 
     function replaceGroup($s){
-        $s = str_replace("U9 A-Klasse", "A-Klasse Gruppe 04", $s);
-        $s = str_replace("Vereinspokal Herren", "Herren Offen LK 7.0-25.0", $s);
+        $s = str_replace("A-Klasse Gruppe 04", "U9 A-Klasse", $s);
+        $s = str_replace("Herren Offen LK 7.0-25.0", "Vereinspokal Herren", $s);
         return $s;
     }
 
