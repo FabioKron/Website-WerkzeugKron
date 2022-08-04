@@ -55,6 +55,7 @@
     function replaceGroup($s){
         $s = str_replace("A-Klasse Gruppe 04", "U9 A-Klasse", $s);
         $s = str_replace("Herren Offen LK 7.0-25.0", "Vereinspokal Herren", $s);
+        print_r("rrrrrrr");
         return $s;
     }
 
