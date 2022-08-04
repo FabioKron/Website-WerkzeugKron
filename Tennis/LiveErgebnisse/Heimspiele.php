@@ -39,6 +39,7 @@
 
             # Gruppe
             $results[$i]['group'] = explode(" Gr.", $div_class->find(".group")[0]->plaintext)[0];
+            $results[$i]['group'] = replaceGroup($results[$i]['group']);
 
             # Gastmannschaft
             $results[$i]['guest'] = $div_class->find(".guest")[0]->plaintext;
@@ -49,6 +50,12 @@
         }
             
         }
+    }
+
+    function replaceGroup($s){
+        $s = str_replace("U9 A-Klasse", "A-Klasse Gruppe 04", $s);
+        $s = str_replace("Vereinspokal Herren", "Herren Offen LK 7.0-25.0", $s);
+        return $s;
     }
 
     function replaceMonth($e){
