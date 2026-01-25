@@ -20,7 +20,7 @@ const injectClosureBanner = () => {
     banner.className = "site-banner";
     banner.innerHTML = `
         <p><strong>Hinweis:</strong> Unser Ladengeschäft ist ab 2026 geschlossen.</p>
-        <p>Ausverkauf von Maschinen, Geräten und Brennholz am <strong>03.01., 10.01., 17.01. und 24.01.2026</strong> jeweils von <strong>9 bis 13 Uhr</strong>.</p>
+        <p>Ausverkauf von Maschinen, Geräten und Brennholz am <strong>14.02., 21.02., 28.02., 07.03. und 14.03.2026</strong> jeweils von <strong>9 bis 13 Uhr</strong>.</p>
     `;
 
     main.prepend(banner);
